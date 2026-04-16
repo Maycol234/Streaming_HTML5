@@ -2,42 +2,47 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Streaming App</title>
+  <title>Streaming Web</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/app.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Streaming</h1>
+    <p>Tu portal de entretenimiento</p>
   </header>
 
+ 
+  <nav>
+    <ul>
+      <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+      <li><a href="#" onclick="mostrarSeccion('que-es')">¿Qué es?</a></li>
+      <li><a href="#" onclick="mostrarSeccion('caracteristicas')">Características</a></li>
+      <li><a href="#" onclick="mostrarSeccion('ejemplos')">Ejemplos</a></li>
+      <li><a href="#" onclick="mostrarSeccion('galeria')">Galería</a></li>
+      <li><a href="#" onclick="mostrarSeccion('opinion')">Opinión</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <!-- Inicio -->
+
     <section id="inicio" class="pantalla activa">
       <article class="card">
         <h2>Inicio</h2>
         <p>Bienvenido al mundo del streaming.</p>
         <img src="img/inicio.jpeg" alt="Inicio streaming">
-        <div class="nav-buttons">
-          <button onclick="cambiarPantalla('que-es')">Siguiente</button>
-        </div>
       </article>
     </section>
 
-  
+ 
     <section id="que-es" class="pantalla">
       <article class="card">
         <h2>¿Qué es?</h2>
         <p>El streaming permite reproducir contenido multimedia en tiempo real.</p>
         <img src="img/que-es.jpeg" alt="Qué es streaming">
-        <div class="nav-buttons">
-          <button onclick="cambiarPantalla('inicio')">Atrás</button>
-          <button onclick="cambiarPantalla('caracteristicas')">Siguiente</button>
-        </div>
       </article>
     </section>
 
-    
     <section id="caracteristicas" class="pantalla">
       <article class="card">
         <h2>Características</h2>
@@ -47,66 +52,46 @@
           <li>Multiplataforma</li>
         </ul>
         <img src="img/caracteristicas.jpeg" alt="Características streaming">
-        <div class="nav-buttons">
-          <button onclick="cambiarPantalla('que-es')">Atrás</button>
-          <button onclick="cambiarPantalla('ejemplos')">Siguiente</button>
-        </div>
       </article>
     </section>
 
- 
+
     <section id="ejemplos" class="pantalla">
       <article class="card">
         <h2>Ejemplos</h2>
         <p>Plataformas como Netflix, Disney+, HBO Max y Spotify son referentes del streaming.</p>
         <img src="img/ejemplos.jpeg" alt="Ejemplos de plataformas">
-        <div class="nav-buttons">
-          <button onclick="cambiarPantalla('caracteristicas')">Atrás</button>
-          <button onclick="cambiarPantalla('galeria')">Siguiente</button>
+      </article>
+    </section>
+
+    
+    <section id="galeria" class="pantalla">
+      <article class="card">
+        <h2>Galería</h2>
+        <div class="galeria-item">
+          <img src="img/galeria1.jpeg" alt="Cine en casa">
+          <h3>Cine en casa</h3>
+          <p>Una experiencia inmersiva con palomitas y acción en pantalla grande.</p>
+        </div>
+        <div class="galeria-item">
+          <img src="img/galeria2.jpeg" alt="Música y series">
+          <h3>Música y series</h3>
+          <p>Disfruta tus playlists favoritas y tus series preferidas en cualquier momento.</p>
+        </div>
+        <div class="galeria-item">
+          <img src="img/galeria3.jpeg" alt="Cine y entretenimiento">
+          <h3>Cine y entretenimiento</h3>
+          <p>Explora mundos de fantasía y ciencia ficción desde tu pantalla.</p>
         </div>
       </article>
     </section>
 
-   
-<section id="galeria" class="pantalla">
-  <article class="card">
-    <h2>Galería</h2>
 
-    <div class="galeria-item">
-      <img src="img/galeria1.jpeg" alt="Cine en casa">
-      <h3>Cine en casa</h3>
-      <p>Una experiencia inmersiva con palomitas, sonido envolvente y acción en pantalla grande.</p>
-    </div>
-
-    <div class="galeria-item">
-      <img src="img/galeria2.jpeg" alt="Música y series">
-      <h3>Música y series</h3>
-      <p>Disfruta tus playlists favoritas y tus series preferidas en cualquier momento.</p>
-    </div>
-
-    <div class="galeria-item">
-      <img src="img/galeria3.jpeg" alt="Cine y entretenimiento">
-      <h3>Cine y entretenimiento</h3>
-      <p>Explora mundos de fantasía, ciencia ficción y aventuras épicas desde tu pantalla.</p>
-    </div>
-
-    <div class="nav-buttons">
-      <button onclick="cambiarPantalla('ejemplos')">Atrás</button>
-      <button onclick="cambiarPantalla('opinion')">Siguiente</button>
-    </div>
-  </article>
-</section>
-
-
-  
     <section id="opinion" class="pantalla">
       <article class="card">
         <h2>Opinión</h2>
         <p>El streaming ha revolucionado la forma en que consumimos entretenimiento.</p>
         <img src="img/opinion.jpeg" alt="Opinión sobre streaming">
-        <div class="nav-buttons">
-          <button onclick="cambiarPantalla('galeria')">Atrás</button>
-        </div>
       </article>
     </section>
   </main>
