@@ -2,103 +2,93 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Streaming</title>
+  <title>Streaming App</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/app.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Streaming</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#que-es">¿Qué es?</a></li>
-        <li><a href="#caracteristicas">Características</a></li>
-        <li><a href="#ejemplos">Ejemplos</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#opinion">Opinión</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
-
-    <section id="inicio">
-      <article>
+    <!-- Inicio -->
+    <section id="inicio" class="pantalla activa">
+      <article class="card">
         <h2>Inicio</h2>
         <p>Bienvenido al mundo del streaming.</p>
-        <img src="img/inicio.jpg" alt="Inicio streaming">
+        <img src="img/inicio.jpeg" alt="Inicio streaming">
         <div class="nav-buttons">
-          <button onclick="irA('que-es')">Siguiente</button>
+          <button onclick="cambiarPantalla('que-es')">Siguiente</button>
         </div>
       </article>
     </section>
 
- 
-    <section id="que-es">
-      <article>
+    <!-- Qué es -->
+    <section id="que-es" class="pantalla">
+      <article class="card">
         <h2>¿Qué es?</h2>
         <p>El streaming permite reproducir contenido multimedia en tiempo real.</p>
-        <img src="img/que-es.jpg" alt="Qué es streaming">
+        <img src="img/que-es.jpeg" alt="Qué es streaming">
         <div class="nav-buttons">
-          <button onclick="irA('inicio')">Atrás</button>
-          <button onclick="irA('caracteristicas')">Siguiente</button>
+          <button onclick="cambiarPantalla('inicio')">Atrás</button>
+          <button onclick="cambiarPantalla('caracteristicas')">Siguiente</button>
         </div>
       </article>
     </section>
 
-   
-    <section id="caracteristicas">
-      <article>
+    <!-- Características -->
+    <section id="caracteristicas" class="pantalla">
+      <article class="card">
         <h2>Características</h2>
         <ul>
           <li>Acceso inmediato</li>
           <li>Variedad de contenido</li>
-          <li>Compatibilidad multiplataforma</li>
+          <li>Multiplataforma</li>
         </ul>
-        <img src="img/caracteristicas.jpg" alt="Características streaming">
+        <img src="img/caracteristicas.jpeg" alt="Características streaming">
         <div class="nav-buttons">
-          <button onclick="irA('que-es')">Atrás</button>
-          <button onclick="irA('ejemplos')">Siguiente</button>
+          <button onclick="cambiarPantalla('que-es')">Atrás</button>
+          <button onclick="cambiarPantalla('ejemplos')">Siguiente</button>
         </div>
       </article>
     </section>
 
-  
-    <section id="ejemplos">
-      <article>
+    <!-- Ejemplos -->
+    <section id="ejemplos" class="pantalla">
+      <article class="card">
         <h2>Ejemplos</h2>
         <p>Plataformas como Netflix, Disney+, HBO Max y Spotify son referentes del streaming.</p>
-        <img src="img/ejemplos.jpg" alt="Ejemplos de plataformas">
+        <img src="img/ejemplos.jpeg" alt="Ejemplos de plataformas">
         <div class="nav-buttons">
-          <button onclick="irA('caracteristicas')">Atrás</button>
-          <button onclick="irA('galeria')">Siguiente</button>
+          <button onclick="cambiarPantalla('caracteristicas')">Atrás</button>
+          <button onclick="cambiarPantalla('galeria')">Siguiente</button>
         </div>
       </article>
     </section>
 
-
-    <section id="galeria">
-      <article>
+    <!-- Galería -->
+    <section id="galeria" class="pantalla">
+      <article class="card">
         <h2>Galería</h2>
-        <img src="img/galeria1.jpg" alt="Galería 1">
-        <img src="img/galeria2.jpg" alt="Galería 2">
-        <img src="img/galeria3.jpg" alt="Galería 3">
+        <img src="img/galeria1.jpeg" alt="Galería 1">
+        <img src="img/galeria2.jpeg" alt="Galería 2">
+        <img src="img/galeria3.jpeg" alt="Galería 3">
         <div class="nav-buttons">
-          <button onclick="irA('ejemplos')">Atrás</button>
-          <button onclick="irA('opinion')">Siguiente</button>
+          <button onclick="cambiarPantalla('ejemplos')">Atrás</button>
+          <button onclick="cambiarPantalla('opinion')">Siguiente</button>
         </div>
       </article>
     </section>
 
-  
-    <section id="opinion">
-      <article>
+    <!-- Opinión -->
+    <section id="opinion" class="pantalla">
+      <article class="card">
         <h2>Opinión</h2>
         <p>El streaming ha revolucionado la forma en que consumimos entretenimiento.</p>
-        <img src="img/opinion.jpg" alt="Opinión sobre streaming">
+        <img src="img/opinion.jpeg" alt="Opinión sobre streaming">
         <div class="nav-buttons">
-          <button onclick="irA('galeria')">Atrás</button>
+          <button onclick="cambiarPantalla('galeria')">Atrás</button>
         </div>
       </article>
     </section>
