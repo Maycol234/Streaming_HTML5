@@ -1,3 +1,4 @@
+/* Estilo general */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,11 +7,18 @@ body {
   text-align: center;
 }
 
+/* Encabezado */
 header {
   background-color: #111;
   padding: 15px;
 }
 
+header h1 {
+  color: #ff0000;
+  font-size: 1.5em;
+}
+
+/* Tarjetas tipo app */
 .card {
   background: #111;
   border-radius: 10px;
@@ -26,6 +34,7 @@ header {
   margin-top: 10px;
 }
 
+/* Botones de navegación */
 .nav-buttons button {
   background-color: #ff0000;
   color: #fff;
@@ -34,6 +43,7 @@ header {
   margin: 10px;
   border-radius: 8px;
   cursor: pointer;
+  width: 80%;
 }
 
 .nav-buttons button:hover {
@@ -47,4 +57,45 @@ header {
 
 .pantalla.activa {
   display: block;
+}
+
+/* Galería mejorada */
+.galeria-item {
+  margin: 20px 0;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.galeria-item h3 {
+  color: #ff0000;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.galeria-item p {
+  color: #ccc;
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin: 0 10px 10px 10px;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
 }
