@@ -16,27 +16,38 @@ header h1 {
   font-size: 1.5em;
 }
 
+nav {
+  background: linear-gradient(to right, #111, #222);
+  padding: 10px 0;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #000;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 10px;
 }
 
 nav ul li a {
+  display: block;
+  background-color: #1a1a1a;
   color: #fff;
   text-decoration: none;
-  font-size: 1em;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 nav ul li a:hover {
-  color: #ff0000;
+  background-color: #ff0000;
+  transform: scale(1.05);
 }
 
 .card {
